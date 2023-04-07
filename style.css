@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Moon+Dance&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100vw;
+    height: 9vh;
+    background-color: rgb(129, 125, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    font-family: 'Moon Dance', cursive;
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    font-weight: 90%;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.gameContainer{
+    background-color: rgb(204, 184, 223);
+    display: grid;
+    grid-template-rows: repeat(3, 20vh);
+    grid-template-columns: repeat(3, 20vh);
+}
+.gameContainer .boxes{
+    display: flex;
+    border: 2px solid grey;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.gameContainer .boxes:hover{
+    background-color: white;
+    transition: .3s ease all;    
+}
+
+.gameContainer span{
+    font-size: 10vw;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+}
+.gameInfo{
+    margin: 0 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.gameInfo h1{
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(204, 184, 223);
+    font-weight: bold;
+    /* visibility: hidden; */
+}
+.showWinner{
+    padding: 0 8px;
+    color: black;
+}
+.turnFor{
+    font-family: 'Source Code Pro', monospace;
+    padding: 0 10px;
+    color: black;
+    font-weight: bolder;
+}
+h2{
+    font-family: 'Source Code Pro', monospace;
+    padding: 0 10px;
+    color: rgb(204, 184, 223);
+}
